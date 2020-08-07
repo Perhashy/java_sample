@@ -11,9 +11,6 @@ public class Sample9 {
   }
   public static void main(String[] args) {
     // System.out.println(s); 直接呼び出せない
-    // インスタンスを作成して使える
-    String s = new String("str");
-    System.out.println(s);
     // 直接呼び出せる
     System.out.println(ss);
 
