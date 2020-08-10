@@ -4,6 +4,7 @@ abstract class Vehicle {
   private String name;
   private String color;
   protected int distance = 0;
+  private Person owner;
 
   Vehicle(String name, String color) {
     this.name = name;
@@ -19,12 +20,18 @@ abstract class Vehicle {
   public int getDistance() {
     return this.distance;
   }
+  public Person getOwner() {
+    return this.owner;
+  }
 
   public void setName(String name) {
     this.name = name;
   }
   public void setColor(String color) {
     this.color = color;
+  }
+  public void setOwner(Person person) {
+    this.owner = person;
   }
 
   public void printData() {
