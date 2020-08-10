@@ -1,6 +1,6 @@
 package progate.Java5.Java5_1;
 
-public class Vehicle {
+abstract class Vehicle {
   private String name;
   private String color;
   protected int distance = 0;
@@ -32,4 +32,6 @@ public class Vehicle {
     System.out.println("色：" + this.color);
     System.out.println("走行距離：" + this.distance + "km");
   }
+
+  abstract public void run(int distance);
 }
