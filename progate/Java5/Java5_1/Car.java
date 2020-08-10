@@ -3,6 +3,10 @@ package progate.Java5.Java5_1;
 class Car extends Vehicle {
   private int fuel = 50;
 
+  Car(String name, String color) {
+    super(name, color);
+  }
+
   public int getFuel() {
     return this.fuel;
   }
