@@ -3,7 +3,7 @@ package progate.Java5.Java5_1;
 public class Vehicle {
   private String name;
   private String color;
-  private int distance = 0;
+  protected int distance = 0;
 
   Vehicle(String name, String color) {
     this.name = name;
