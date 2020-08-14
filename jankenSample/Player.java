@@ -15,7 +15,7 @@ public class Player {
   }
 
   public Hand nextHand() {
-    int n = random.nextInt();
+    int n = random.nextInt(3);
     switch (n) {
       case 0: return Hand.Rock;
       case 1: return Hand.Scissors;
