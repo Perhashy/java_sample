@@ -2,6 +2,6 @@ package jankenSample;
 
 public class Main {
   public static void main(String[] args) {
-    System.out.println("じゃんけんゲーム");
+    System.out.println(Hand.Rock);
   }
 }
