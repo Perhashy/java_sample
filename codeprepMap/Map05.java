@@ -25,11 +25,14 @@ public class Map05 {
     System.out.println(map.containsValue("Cherry"));
 
     System.out.println("---------------------");
-    Map<String, String> map2 = new HashMap<String, String>();
-    map2.put("c", "Cherry");
-    map2.put("d", "Donut");
+    // Map<String, String> map2 = new HashMap<String, String>();
+    // map2.put("c", "Cherry");
+    // map2.put("d", "Donut");
 
-    map.putAll(map2);
+    // map.putAll(map2);
+    System.out.println(map);
+    map.putIfAbsent("a", "Apple");
+    map.putIfAbsent("c", "Cherry");
     System.out.println(map);
   }
 }
