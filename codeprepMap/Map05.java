@@ -34,5 +34,10 @@ public class Map05 {
     map.putIfAbsent("a", "Apple");
     map.putIfAbsent("c", "Cherry");
     System.out.println(map);
+
+    System.out.println("---------------------");
+    System.out.println(map);
+    map.remove("a");
+    System.out.println(map);
   }
 }
