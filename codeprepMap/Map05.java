@@ -11,5 +11,7 @@ public class Map05 {
 
     System.out.println(map.getOrDefault("a", "Anime"));
     System.out.println(map.getOrDefault("c", "Cartoon"));
+
+    System.out.println(map.size());
   }
 }
