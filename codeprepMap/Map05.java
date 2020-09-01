@@ -23,5 +23,13 @@ public class Map05 {
     System.out.println("---------------------");
     System.out.println(map.containsValue("Apple"));
     System.out.println(map.containsValue("Cherry"));
+
+    System.out.println("---------------------");
+    Map<String, String> map2 = new HashMap<String, String>();
+    map2.put("c", "Cherry");
+    map2.put("d", "Donut");
+
+    map.putAll(map2);
+    System.out.println(map);
   }
 }
