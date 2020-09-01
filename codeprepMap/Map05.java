@@ -36,8 +36,13 @@ public class Map05 {
     System.out.println(map);
 
     System.out.println("---------------------");
+    // System.out.println(map);
+    // map.remove("a");
+    // System.out.println(map);
+
     System.out.println(map);
-    map.remove("a");
+    map.remove("a", "Anime");
+    map.remove("b", "Banana");
     System.out.println(map);
   }
 }
