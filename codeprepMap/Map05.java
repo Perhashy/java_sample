@@ -8,6 +8,8 @@ public class Map05 {
     Map<String, String> map = new HashMap<>();
     map.put("a", "Apple");
     map.put("b", "Banana");
-    System.out.println(map);
+
+    System.out.println(map.get("a"));
+    System.out.println(map.get("c"));
   }
 }
