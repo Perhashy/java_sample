@@ -9,7 +9,7 @@ public class Map05 {
     map.put("a", "Apple");
     map.put("b", "Banana");
 
-    System.out.println(map.get("a"));
-    System.out.println(map.get("c"));
+    System.out.println(map.getOrDefault("a", "Anime"));
+    System.out.println(map.getOrDefault("c", "Cartoon"));
   }
 }
