@@ -44,5 +44,10 @@ public class Map05 {
     map.remove("a", "Anime");
     map.remove("b", "Banana");
     System.out.println(map);
+
+    System.out.println("---------------------");
+    System.out.println(map);
+    map.clear();
+    System.out.println(map);
   }
 }
