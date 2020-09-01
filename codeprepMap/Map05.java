@@ -19,5 +19,9 @@ public class Map05 {
     System.out.println("---------------------");
     System.out.println(map.containsKey("a"));
     System.out.println(map.containsKey("c"));
+
+    System.out.println("---------------------");
+    System.out.println(map.containsValue("Apple"));
+    System.out.println(map.containsValue("Cherry"));
   }
 }
