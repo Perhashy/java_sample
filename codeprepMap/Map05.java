@@ -13,5 +13,8 @@ public class Map05 {
     System.out.println(map.getOrDefault("c", "Cartoon"));
 
     System.out.println(map.size());
+
+    System.out.println(map.containsKey("a"));
+    System.out.println(map.containsKey("c"));
   }
 }
