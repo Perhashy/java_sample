@@ -20,6 +20,16 @@ class MyKey {
   public String toString() {
     return this.key;
   }
+
+  @Override
+  public int hashCode() {
+    return this.key.hashCode();
+  }
+
+  @Override
+  public boolean equals(Object obj) {
+    return obj instanceof MyKey && this.key.equals(((MyKey)obj).key);
+  }
 }
 
 public class Map08 {
@@ -39,6 +49,6 @@ public class Map08 {
   public static void main(String[] args) {
     testMap(new HashMap<MyKey, String>());
     testMap(new LinkedHashMap<MyKey, String>());
-    testMap(new TreeMap<MyKey, String>());
+    // testMap(new TreeMap<MyKey, String>());
   }
 }
