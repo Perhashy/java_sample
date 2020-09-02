@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.TreeMap;
 
-class MyKey {
+class MyKey implements Comparable<MyKey> {
   private String key;
 
   public MyKey(String key) {
@@ -30,6 +30,10 @@ class MyKey {
   public boolean equals(Object obj) {
     return obj instanceof MyKey && this.key.equals(((MyKey)obj).key);
   }
+
+  public int compareTo(MyKey o) {
+    return this.key.compareTo(o.getKey());
+  }
 }
 
 public class Map08 {
@@ -49,6 +53,6 @@ public class Map08 {
   public static void main(String[] args) {
     testMap(new HashMap<MyKey, String>());
     testMap(new LinkedHashMap<MyKey, String>());
-    // testMap(new TreeMap<MyKey, String>());
+    testMap(new TreeMap<MyKey, String>());
   }
 }
