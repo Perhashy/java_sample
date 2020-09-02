@@ -3,6 +3,7 @@ package codeprepMap;
 import java.util.Map;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.Collections;
 
 public class Map06 {
   public static void main(String[] args) {
@@ -40,5 +41,9 @@ public class Map06 {
     map.forEach((key, value) -> {
       System.out.println(key + " = " + value);
     });
+
+    System.out.println("---------------------");
+    Map<String, String> map2 = Collections.synchronizedMap(map);
+    System.out.println(map2);
   }
 }
