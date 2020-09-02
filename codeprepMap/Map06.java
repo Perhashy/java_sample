@@ -23,5 +23,12 @@ public class Map06 {
       String value = it2.next();
       System.out.println(value);
     }
+
+    System.out.println("---------------------");
+    Iterator<Map.Entry<String, String>> it3 = map.entrySet().iterator();
+    while (it3.hasNext()) {
+      Map.Entry<String, String> entry = it3.next();
+      System.out.println(entry.getKey() + " = " + entry.getValue());
+    }
   }
 }
