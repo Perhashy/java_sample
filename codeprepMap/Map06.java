@@ -30,5 +30,10 @@ public class Map06 {
       Map.Entry<String, String> entry = it3.next();
       System.out.println(entry.getKey() + " = " + entry.getValue());
     }
+
+    System.out.println("---------------------");
+    for (Map.Entry<String, String> entry : map.entrySet()) {
+      System.out.println(entry.getKey() + " = " + entry.getValue());
+    }
   }
 }
