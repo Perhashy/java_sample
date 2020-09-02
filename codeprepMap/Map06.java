@@ -16,5 +16,12 @@ public class Map06 {
       String key = it.next();
       System.out.println(key);
     }
+
+    System.out.println("---------------------");
+    Iterator<String> it2 = map.values().iterator();
+    while (it2.hasNext()) {
+      String value = it2.next();
+      System.out.println(value);
+    }
   }
 }
