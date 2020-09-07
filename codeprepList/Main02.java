@@ -31,5 +31,10 @@ public class Main02 {
     // int removed = list.remove(3);
     System.out.println(list.remove(3));
     System.out.println(list);
+
+    System.out.println("---------------------");
+    boolean bRemoved = list.remove(new Integer(2));
+    System.out.println(bRemoved);
+    System.out.println(list);
   }
 }
