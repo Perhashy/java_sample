@@ -26,5 +26,10 @@ public class Main02 {
 
     System.out.println("---------------------");
     System.out.println(list.indexOf(5));
+
+    System.out.println("---------------------");
+    // int removed = list.remove(3);
+    System.out.println(list.remove(3));
+    System.out.println(list);
   }
 }
