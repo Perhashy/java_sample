@@ -11,5 +11,8 @@ public class Main01 {
 
     List<String> list2 = new LinkedList<>();
     System.out.println(list2);
+
+    List<Integer> listInt = new LinkedList<>();
+    System.out.println(listInt);
   }
 }
