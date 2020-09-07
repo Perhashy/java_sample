@@ -23,5 +23,8 @@ public class Main02 {
     System.out.println("---------------------");
     list.set(3, 5);
     System.out.println(list);
+
+    System.out.println("---------------------");
+    System.out.println(list.indexOf(5));
   }
 }
