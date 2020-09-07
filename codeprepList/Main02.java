@@ -13,7 +13,11 @@ public class Main02 {
     list.add(3, 4);
     System.out.println(list);
 
+    System.out.println("---------------------");
     System.out.println(list.get(0));
     System.out.println(list.get(2));
+
+    System.out.println("---------------------");
+    System.out.println(list.size());
   }
 }
