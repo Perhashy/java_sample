@@ -36,5 +36,9 @@ public class Main02 {
     boolean bRemoved = list.remove(new Integer(2));
     System.out.println(bRemoved);
     System.out.println(list);
+
+    System.out.println("---------------------");
+    list.clear();
+    System.out.println(list);
   }
 }
