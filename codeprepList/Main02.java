@@ -19,5 +19,9 @@ public class Main02 {
 
     System.out.println("---------------------");
     System.out.println(list.size());
+
+    System.out.println("---------------------");
+    list.set(3, 5);
+    System.out.println(list);
   }
 }
