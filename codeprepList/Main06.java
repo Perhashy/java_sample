@@ -15,5 +15,9 @@ public class Main06 {
     System.out.println("---------------------");
     list.sort(null);
     System.out.println(list);
+
+    System.out.println("---------------------");
+    list.sort((a, b) -> b - a);
+    System.out.println(list);
   }
 }
