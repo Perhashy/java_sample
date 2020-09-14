@@ -10,5 +10,9 @@ public class Main05 {
     Collections.addAll(list, "aaa", "bbb", "ccc");
 
     System.out.println(list);
+
+    System.out.println("---------------------");
+    List<String> list2 = Collections.synchronizedList(list);
+    System.out.println(list2);
   }
 }
