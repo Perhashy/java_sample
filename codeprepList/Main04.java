@@ -21,5 +21,10 @@ public class Main04 {
       String item = it.next();
       System.out.println(item);
     }
+
+    System.out.println("---------------------");
+    list.forEach(item -> {
+      System.out.println(item);
+    });
   }
 }
