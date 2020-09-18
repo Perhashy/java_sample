@@ -17,5 +17,11 @@ public class Main07 {
     System.out.println("---------------------");
     List<Integer> list2 = list.stream().collect(Collectors.toList());
     System.out.println(list2);
+
+    System.out.println("---------------------");
+    List<Integer> list3 = list.stream()
+    .filter(v -> v % 2 == 0)
+    .collect(Collectors.toList());
+    System.out.println(list3);
   }
 }
