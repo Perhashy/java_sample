@@ -9,7 +9,7 @@ public class Main07 {
     List<Integer> list = new ArrayList<>();
     for (int i = 1; i <= 10; i++) {
       list.add(i);
-      list.add(i);
+      // list.add(i);
     }
 
     System.out.println(list);
@@ -30,5 +30,11 @@ public class Main07 {
     .distinct()
     .collect(Collectors.toList());
     System.out.println(list4);
+
+    System.out.println("---------------------");
+    List<Integer> list5 = list.stream()
+    .map(v -> v * v)
+    .collect(Collectors.toList());
+    System.out.println(list5);
   }
 }
