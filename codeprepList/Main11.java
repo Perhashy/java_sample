@@ -16,5 +16,10 @@ public class Main11 {
     System.out.println(list);
     System.out.println("先頭：" + list.getFirst());
     System.out.println("末尾：" + list.getLast());
+
+    System.out.println("---------------------");
+    System.out.println("先頭：" + list.removeFirst());
+    System.out.println("末尾：" + list.removeLast());
+    System.out.println(list);
   }
 }
