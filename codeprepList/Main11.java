@@ -14,5 +14,7 @@ public class Main11 {
     list.addLast(5);
 
     System.out.println(list);
+    System.out.println("先頭：" + list.getFirst());
+    System.out.println("末尾：" + list.getLast());
   }
 }
