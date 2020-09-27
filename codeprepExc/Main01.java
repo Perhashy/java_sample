@@ -5,6 +5,7 @@ public class Main01 {
     try {
       return a / b;
     } catch (ArithmeticException e) {
+      e.printStackTrace();
       return 0;
     }
   }
