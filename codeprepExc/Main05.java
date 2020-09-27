@@ -5,7 +5,7 @@ import java.io.File;
 import java.io.IOException;
 
 public class Main05 {
-  private static String readFile(File file, String encoding) {
+  private static String readFile(File file, String encoding) throws IOException {
     return new String(Files.readAllBytes(file.toPath()), encoding);
   }
 
