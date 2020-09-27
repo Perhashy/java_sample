@@ -5,8 +5,11 @@ public class Main07 {
     // String str = null;
     // System.out.println(str.toUpperCase());
 
-    System.out.println("---------------------");
-    int[] array = new int[] {5, 10, 15};
-    System.out.println(array[3]);
+    // System.out.println("---------------------");
+    // int[] array = new int[] {5, 10, 15};
+    // System.out.println(array[3]);
+
+    byte[] date = new byte[Integer.MAX_VALUE];
+    System.out.println(date.length);
   }
 }
