@@ -16,10 +16,13 @@ public class Main２ {
     // } catch (UnsupportedEncodingException e) {
     //   System.out.println("エンコーディングが不正です：" + encoding);
     //   return "";
-    } catch (NoSuchFileException | UnsupportedEncodingException e) {
-      System.out.println("ファイルが見つからないかエンコーディングが不正です。");
-      return "";
-    } catch (IOException e) {
+    // } catch (NoSuchFileException | UnsupportedEncodingException e) {
+    //   System.out.println("ファイルが見つからないかエンコーディングが不正です。");
+    //   return "";
+    // } catch (IOException e) {
+    //   System.out.println("ファイルの読み込みに失敗しました：" + file);
+    //   return "";
+    } catch (Exception e) {
       System.out.println("ファイルの読み込みに失敗しました：" + file);
       return "";
     }
