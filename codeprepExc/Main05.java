@@ -10,8 +10,20 @@ public class Main05 {
   }
 
   public static void main(String[] args) {
-    System.out.println("テスト１：" + readFile(new File("file1.txt"), "utf-8"));
-    System.out.println("テスト２：" + readFile(new File("file2.txt"), "utf-8"));
-    System.out.println("テスト３：" + readFile(new File("file1.txt"), "unknown"));
+    try {
+      System.out.println("テスト１：" + readFile(new File("file1.txt"), "utf-8"));
+    } catch (IOException e) {
+      System.out.println("ファイルの読み込みに失敗しました：");
+    }
+    try {
+      System.out.println("テスト２：" + readFile(new File("file2.txt"), "utf-8"));
+    } catch (IOException e) {
+      System.out.println("ファイルの読み込みに失敗しました：");
+    }
+    try {
+      System.out.println("テスト３：" + readFile(new File("file1.txt"), "unknown"));
+    } catch (IOException e) {
+      System.out.println("ファイルの読み込みに失敗しました：");
+    }
   }
 }
