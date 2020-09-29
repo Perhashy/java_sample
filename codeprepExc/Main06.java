@@ -9,11 +9,14 @@ public class Main06 {
     // }
     // return a/ b;
 
-    try {
-      return a / b;
-    } catch (ArithmeticException e) {
-      throw new IllegalArgumentException("除数が0です", e);
-    }
+    // try {
+    //   return a / b;
+    // } catch (ArithmeticException e) {
+    //   throw new IllegalArgumentException("除数が0です", e);
+    // }
+
+    assert b != 0;
+    return a/ b;
   }
 
   public static void main(String[] args) {
