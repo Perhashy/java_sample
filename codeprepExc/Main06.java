@@ -2,6 +2,10 @@ package codeprepExc;
 
 public class Main06 {
   private static int divide(int a, int b) {
+    // return a/ b;
+    if (b == 0) {
+      throw new IllegalArgumentException("除数が0です");
+    }
     return a/ b;
   }
 
